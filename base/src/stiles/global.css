@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "daisyui";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/700.css";
+
+@theme {
+  /* Registramos la fuente para usarla con la clase 'font-sans' */
+  --font-sans: "Roboto", sans-serif;
+  --font-display: "Fira Code", monospace;
+}
