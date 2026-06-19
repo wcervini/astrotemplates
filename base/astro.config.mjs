@@ -1,12 +1,10 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import tailwind from '@tailwindcss/vite';
-import icon from 'astro-icon';
+import { extraIntegrations } from './src/config/modules/integrations.js';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations:[icon()],
-  vite: {
-    plugins: [tailwind()],
-  },
+  integrations: [
+    ...extraIntegrations
+  ]
 });

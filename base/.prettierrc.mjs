@@ -7,17 +7,15 @@ export default {
   tabWidth: 2,
   useTabs: false,
 
-  // Los plugins deben cargarse en este orden preciso para evitar conflictos
+  // Plugins estrictamente necesarios para el Core en Main
   plugins: [
     'prettier-plugin-sort-imports',
-    'prettier-plugin-astro',
-    'prettier-plugin-tailwindcss',
-    'prettier-plugin-sort-json'
+    'prettier-plugin-astro'
   ],
 
   // Configuración específica para prettier-plugin-sort-imports
   importOrder: [
-    '^react$', 
+    '^react$',
     '^astro',
     '<THIRD_PARTY_MODULES>',
     '^@/(.*)$',
@@ -28,11 +26,4 @@ export default {
 
   // Forzar el parseo correcto de archivos de Astro
   overrides: [
-    {
-      files: '*.astro',
-      options: {
-        parser: 'astro',
-      },
-    },
-  ],
-};
+    {\n      files: '*.astro',\n      options: {\n        parser: 'astro',\n      },\n    },\n  ],\n};
