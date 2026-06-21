@@ -1,16 +1,42 @@
 @import 'tailwindcss';
 @plugin 'daisyui';
 @import '@fontsource-variable/roboto/index.css';
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/400-italic.css";
+@import "@fontsource/permanent-marker/index.css";
+@import "@fontsource/mochiy-pop-one/index.css";
 
 @theme {
-  /* Registramos la fuente para usarla con la clase 'font-sans' */
-  --font-sans: 'Roboto', sans-serif;
-  --font-display: 'Fira Code', monospace;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-permanent-marker: 'Permanent Marker', cursive;
+  --font-mochiy-pop: 'Mochiy Pop One', sans-serif;
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+  --color-info: var(--info);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
 }
 
 :root {
   --primary: #3e4799;
   --secondary: #dfee14;
+  --accent: #f59e0b;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+  --surface: #f8fafc;
+  --muted: #94a3b8;
+  --border: #e2e8f0;
+}
+
+.dark {
+  --surface: #0f172a;
+  --muted: #64748b;
+  --border: #334155;
 }
