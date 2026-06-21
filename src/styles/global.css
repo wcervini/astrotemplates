@@ -1,28 +1,13 @@
-@import 'tailwindcss';
-@plugin 'daisyui';
 @import '@fontsource-variable/roboto/index.css';
-@import "@fontsource/roboto/400.css";
-@import "@fontsource/roboto/400-italic.css";
-@import "@fontsource/permanent-marker/index.css";
-@import "@fontsource/mochiy-pop-one/index.css";
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/400-italic.css';
+@import '@fontsource/permanent-marker/index.css';
+@import '@fontsource/mochiy-pop-one/index.css';
 
-@theme {
+:root {
   --font-roboto: 'Roboto', sans-serif;
   --font-permanent-marker: 'Permanent Marker', cursive;
   --font-mochiy-pop: 'Mochiy Pop One', sans-serif;
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-accent: var(--accent);
-  --color-success: var(--success);
-  --color-warning: var(--warning);
-  --color-error: var(--error);
-  --color-info: var(--info);
-  --color-surface: var(--surface);
-  --color-muted: var(--muted);
-  --color-border: var(--border);
-}
-
-:root {
   --primary: #3e4799;
   --secondary: #dfee14;
   --accent: #f59e0b;

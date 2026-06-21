@@ -8,22 +8,19 @@ export default {
   useTabs: false,
 
   // Plugins estrictamente necesarios para el Core en Main
-  plugins: [
-    'prettier-plugin-sort-imports',
-    'prettier-plugin-astro'
-  ],
+  plugins: ['prettier-plugin-sort-imports', 'prettier-plugin-astro'],
 
   // Configuración específica para prettier-plugin-sort-imports
-  importOrder: [
-    '^react$',
-    '^astro',
-    '<THIRD_PARTY_MODULES>',
-    '^@/(.*)$',
-    '^[./]'
-  ],
+  importOrder: ['^react$', '^astro', '<THIRD_PARTY_MODULES>', '^@/(.*)$', '^[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
 
-  // Forzar el parseo correcto de archivos de Astro
   overrides: [
-    {\n      files: '*.astro',\n      options: {\n        parser: 'astro',\n      },\n    },\n  ],\n};
+    {
+      files: '*.astro',
+      options: {
+        parser: 'astro',
+      },
+    },
+  ],
+};

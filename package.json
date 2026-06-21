@@ -21,9 +21,7 @@
     "@astrojs/check": "^0.9.9",
     "@fontsource/roboto": "^5.1.0",
     "@fontsource/permanent-marker": "5.2.7",
-    "@fontsource/mochiy-pop-one":"5.2.8",
-    
-
+    "@fontsource/mochiy-pop-one": "5.2.8",
     "astro": "^6.4.7",
     "typescript": "^6.0.3"
   },

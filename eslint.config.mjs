@@ -1,6 +1,6 @@
+import { extraLintConfigs } from './src/config/modules/lint.js';
 import eslintPluginAstro from 'eslint-plugin-astro';
 import tseslint from 'typescript-eslint';
-import { extraLintConfigs } from './src/config/modules/lint.js';
 
 export default [
   // Configuración base recomendada por ESLint y TypeScript
