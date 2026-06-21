@@ -1,0 +1,33 @@
+:root {
+  --primary: #3e4799;
+  --secondary: #dfee14;
+  --accent: #f59e0b;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+  --surface: #f8fafc;
+  --muted: #94a3b8;
+  --border: #e2e8f0;
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-serif: 'Times New Roman', Times, Georgia, serif;
+  --font-mono: Consolas, 'Courier New', Menlo, Monaco, monospace;
+}
+
+.dark {
+  --surface: #0f172a;
+  --muted: #64748b;
+  --border: #334155;
+}
+
+/* Estilos globales básicos */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  padding: var(--spacing-lg);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
