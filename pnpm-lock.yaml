@@ -11,13 +11,22 @@ importers:
       '@astrojs/check':
         specifier: ^0.9.9
         version: 0.9.9(prettier-plugin-astro@0.14.1)(prettier@3.8.4)(typescript@6.0.3)
+      '@fontsource/mochiy-pop-one':
+        specifier: 5.2.8
+        version: 5.2.8
+      '@fontsource/permanent-marker':
+        specifier: 5.2.7
+        version: 5.2.7
+      '@fontsource/roboto':
+        specifier: ^5.1.0
+        version: 5.2.10
       astro:
         specifier: ^6.4.7
         version: 6.4.7(@types/node@25.9.3)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.0)(yaml@2.9.0)
-      typescript:
-        specifier: ^6.0.3
-        version: 6.0.3
     devDependencies:
+      '@astrojs/ts-plugin':
+        specifier: 1.10.9
+        version: 1.10.9
       '@typescript-eslint/parser':
         specifier: ^8.24.0
         version: 8.61.0(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3)
@@ -36,6 +45,9 @@ importers:
       prettier-plugin-sort-imports:
         specifier: 1.8.11
         version: 1.8.11(typescript@6.0.3)
+      typescript:
+        specifier: ^6.0.3
+        version: 6.0.3
       typescript-eslint:
         specifier: ^8.24.0
         version: 8.61.0(eslint@9.39.4(jiti@2.7.0))(typescript@6.0.3)
@@ -82,6 +94,9 @@ packages:
   '@astrojs/telemetry@3.3.2':
     resolution: {integrity: sha512-j8DNruA8ors99Al39RYZPJK4DC1bKkoNm93mAMuBhY9TCNC4R8n1q7ovFnJ5qhGh5Lsh7pa1gpQVpYpsJPeTHQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
+
+  '@astrojs/ts-plugin@1.10.9':
+    resolution: {integrity: sha512-2pNc9EMXJcvYsmjQahYyqOiUNN9hMzgnxgIE/fZBLJAeOxPeOCSMa6BdngwV+bMgZDJcUSfC3qFt3+9abuUxtQ==}
 
   '@astrojs/yaml2ts@0.2.4':
     resolution: {integrity: sha512-8oddpOae35pJsXPQXhTkM0ypfKPskVsh2bCxRtbf7e+/Epw2nReakFYpLKjZMEr75CsoF203PMnCocpfz0s69A==}
@@ -332,6 +347,15 @@ packages:
   '@eslint/plugin-kit@0.4.1':
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@fontsource/mochiy-pop-one@5.2.8':
+    resolution: {integrity: sha512-WNPX7iIlifcXKDd27o2+YeUkS2BwLIU3LupW3Sz7RLHxxl/mE3ucNuAJesJ+aL/BNLI62+J7w+e3RMoGNlzd8w==}
+
+  '@fontsource/permanent-marker@5.2.7':
+    resolution: {integrity: sha512-Lpjv3yD6TSRvcxjhdv4OZuNtEttbUgVNfFqAE8Qf7D1J8L97qZTZ8rj8OExX2ezCNv920psv+HBHvthAQxNE+A==}
+
+  '@fontsource/roboto@5.2.10':
+    resolution: {integrity: sha512-8HlA5FtSfz//oFSr2eL7GFXAiE7eIkcGOtx7tjsLKq+as702x9+GU7K95iDeWFapHC4M2hv9RrpXKRTGGBI8Zg==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -2464,6 +2488,16 @@ snapshots:
       is-wsl: 3.1.1
       which-pm-runs: 1.1.0
 
+  '@astrojs/ts-plugin@1.10.9':
+    dependencies:
+      '@astrojs/compiler': 2.13.1
+      '@astrojs/yaml2ts': 0.2.4
+      '@jridgewell/sourcemap-codec': 1.5.5
+      '@volar/language-core': 2.4.28
+      '@volar/typescript': 2.4.28
+      semver: 7.8.4
+      vscode-languageserver-textdocument: 1.0.12
+
   '@astrojs/yaml2ts@0.2.4':
     dependencies:
       yaml: 2.9.0
@@ -2648,6 +2682,12 @@ snapshots:
     dependencies:
       '@eslint/core': 0.17.0
       levn: 0.4.1
+
+  '@fontsource/mochiy-pop-one@5.2.8': {}
+
+  '@fontsource/permanent-marker@5.2.7': {}
+
+  '@fontsource/roboto@5.2.10': {}
 
   '@humanfs/core@0.19.2':
     dependencies:
