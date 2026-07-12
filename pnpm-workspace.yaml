@@ -3,3 +3,5 @@ allowBuilds:
   sharp: true
 minimumReleaseAgeExclude:
   - astro@6.4.7
+overrides:
+  yaml: '>=2.8.3'
