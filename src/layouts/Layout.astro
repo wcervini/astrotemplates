@@ -1,5 +1,5 @@
 ---
-import "../styles/global.css";
+import '../styles/global.css';
 
 interface Props {
   title: string;
@@ -9,13 +9,7 @@ interface Props {
   noindex?: boolean;
 }
 
-const {
-  title,
-  description = "Astro Basic Template",
-  image = "/favicon.svg",
-  canonicalURL = Astro.url,
-  noindex = false,
-} = Astro.props;
+const { title, description = 'Astro Basic Template', image = '/favicon.svg', canonicalURL = Astro.url, noindex = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -29,10 +23,7 @@ const {
 
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
-    <meta
-      name="robots"
-      content={noindex ? "noindex, nofollow" : "index, follow"}
-    />
+    <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />

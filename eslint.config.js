@@ -1,7 +1,7 @@
 // @ts-check
-import tailwind from "eslint-plugin-tailwindcss";
-import tseslint from "typescript-eslint";
-import astro from "eslint-plugin-astro";
+import tailwind from 'eslint-plugin-tailwindcss';
+import tseslint from 'typescript-eslint';
+import astro from 'eslint-plugin-astro';
 
 export default tseslint.config(
   ...tseslint.configs.recommended,
@@ -10,19 +10,16 @@ export default tseslint.config(
     ...tailwind.configs.recommended,
     settings: {
       tailwindcss: {
-        cssConfigPath: "./src/styles/global.css",
+        cssConfigPath: './src/styles/global.css',
       },
     },
   },
   {
     rules: {
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        { argsIgnorePattern: "^_" },
-      ],
+      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     },
   },
   {
-    ignores: ["dist/**", ".astro/**"],
+    ignores: ['dist/**', '.astro/**'],
   },
 );

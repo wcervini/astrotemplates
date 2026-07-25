@@ -1,8 +1,8 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --font-sans: sans-serif;
-  --font-display: "Fira Code", monospace;
+  --font-display: 'Fira Code', monospace;
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
 }

@@ -17,17 +17,7 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": false,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "astro",
-    "markdown",
-    "html",
-    "css",
-    "tailwindcss"
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "astro", "markdown", "html", "css", "tailwindcss"],
   "markdown.validate.enabled": true,
   "files.autoSave": "off",
   "editor.fontLigatures": true,
